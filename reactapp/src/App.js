@@ -1,39 +1,64 @@
 import React, { Component } from "react";
-import Herocard from "./components/Herocard";
-import Title from "./components/Title";
-import Wraper from "./components/Wrapper";
-import heros from "./heros.json";
-
+import Card from "./components/Card";
+import Wrapper from "./components/Wrapper";
+import Header from "./components/Header";
+import cards from "./cards.json";
+import "./index.css";
 
 class App extends Component {
-    state = {
-        heros,
-        score: 0,
-        highscore: 0
-    };
+  // Setting this.state.cards to the cards json array
+  state = {
+    cards,
+    score: 0,
+    highscore: 0
+  };
 
-    // add function that when picture is clicked and is/isnot correct increase/reset score, shuffle images
-    // moveHero = id => {
-    //     const heros = this.state.heros
-    // }
+  gameOver = () => {
+    if (this.state.score > this.state.highscore) {
+      this.setState({highscore: this.state.score}, function() {
+        console.log(this.state.highscore);
+      });
+    }
+    this.state.cards.forEach(card => {
+      card.count = 0;
+    });
+    alert(`Game Over! \nscore: ${this.state.score}`);
+    this.setState({score: 0});
+    return true;
+  }
 
-
-   render() {
-       return(
-       <Wraper>
-           <Title>Heros Click Game</Title>
-           {this.state.heros.map(hero =>(
-               <Herocard
-               id = {heros.id}
-               name = {heros.name}
-               image = {hero.image}
-               />
-           ))}
-       </Wraper>
-       )
-   }
+  clickCount = id => {
+    this.state.cards.find((o, i) => {
+      if (o.id === id) {
+        if(cards[i].count === 0){
+          cards[i].count = cards[i].count + 1;
+          this.setState({score : this.state.score + 1}, function(){
+            console.log(this.state.score);
+          });
+          this.state.cards.sort(() => Math.random() - 0.5)
+          return true; 
+        } else {
+          this.gameOver();
+        }
+      }
+    });
+  }
+  // Map over this.state.cards and render a cardCard component for each card object
+  render() {
+    return (
+      <Wrapper>
+        <Header score={this.state.score} highscore={this.state.highscore}>Clicky Game</Header>
+        {this.state.cards.map(card => (
+          <Card
+            clickCount={this.clickCount}
+            id={card.id}
+            key={card.id}
+            image={card.image}
+          />
+        ))}
+      </Wrapper>
+    );
+  }
 }
 
 export default App;
-
-

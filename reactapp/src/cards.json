@@ -1,0 +1,76 @@
+[
+    {
+        "id": 1,
+        "name": "spideman",
+        "image": "https://www.sideshow.com/storage/product-images/903735/spider-man-advanced-suit_marvel_silo.png",
+        "count": 0
+        
+    },
+    {
+        "id": 2,
+        "name": "hulk",
+        "image": "https://upload.wikimedia.org/wikipedia/en/5/59/Hulk_%28comics_character%29.png",
+        "count": 0
+    },
+    {
+        "id": 3,
+        "name": "ironman",
+        "image": "https://banner2.kisspng.com/20180330/cae/kisspng-iron-man-hulk-spider-man-ultron-ironman-5abe8e11d48b13.4927346315224376498706.jpg",
+        "count": 0
+    },
+    {
+        "id": 4,
+        "name": "captainmarvel",
+        "image": "https://i1.wp.com/legacycomics.com/wp-content/uploads/2019/03/captain-marvel-1-brooks-A.jpg?resize=624%2C960&ssl=1",
+        "count": 0
+    },
+    {
+        "id": 5,
+        "name": "captainamerica",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQipucnregS94yC_74CC6Mlx2mwq6MBLQQc-c6lSFYuwisdm8YwPQ",
+        "count": 0
+    },
+    {
+        "id": 6,
+        "name": "thor",
+        "image": "https://cdn.imgbin.com/17/20/9/imgbin-thor-loki-marvel-legacy-marvel-comics-asgard-thor-D8DdykjRfTwsF9Pcvc4frcgcd.jpg",
+        "count": 0
+    },
+    {
+        "id": 7,
+        "name": "wolverine",
+        "image": "https://upload.wikimedia.org/wikipedia/en/c/c8/Marvelwolverine.jpg",
+        "count": 0
+    },
+    {
+        "id": 8,
+        "name": "batman",
+        "image": "https://upload.wikimedia.org/wikipedia/en/8/87/Batman_DC_Comics.png",
+        "count": 0
+    },
+    {
+        "id": 9,
+        "name": "superman",
+        "image": "https://vignette.wikia.nocookie.net/superman/images/b/b1/Superman_Action_976_Gary_Frank.png/revision/latest?cb=20170501140424",
+        "count": 0
+    },
+    {
+        "id": 10,
+        "name": "drstrange",
+        "image": "https://pmcdeadline2.files.wordpress.com/2014/06/doctor-strange__140603221036.jpg",
+        "count": 0
+    },
+    {
+        "id": 11,
+        "name": "thanos",
+        "image": "https://transsylvanicum.info/img/7d28c79744fd4c9b25e4506b4a214cf5.png",
+        "count": 0
+    },
+    {
+        "id": 12,
+        "name": "blackpanther",
+        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Black_Panther_OS_Vol_1_2.png/250px-Black_Panther_OS_Vol_1_2.png",
+        "count": 0
+    }
+
+]
